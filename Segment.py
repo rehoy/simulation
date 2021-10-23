@@ -16,7 +16,7 @@ class Segment:
 
     def draw(self):
         pygame.draw.line(self.screen, self.color,
-                         (self.x, self.y), (self.bx, self.by))
+                         (self.x, self.y), (self.bx, self.by), 200)
 
     def calculateEnd(self):
 

@@ -11,7 +11,7 @@ class Tentacle:
         self.seg_len = round(self.len / self.ant_segments)
         self.segments = []
         self.screen = screen
-        self.color = (0, 0, 0)
+        self.color = (255, 255, 255)
 
         self._make_tentacle()
 
@@ -34,10 +34,10 @@ class Tentacle:
     def draw(self):
         for i in self.segments:
             pygame.draw.line(self.screen, self.color,
-                             (i.x, i.y), (i.bx, i.by))
+                             (i.x, i.y), (i.bx, i.by), 200)
 
     def run(self):
         for i in self.segments:
-            i.update()
+            # i.update()
             pygame.draw.line(self.screen, self.color,
                              (i.x, i.y), (i.bx, i.by))
