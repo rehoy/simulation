@@ -12,7 +12,7 @@ width = 1200
 height = 600
 Color_screen = (0, 0, 0)
 screen = pygame.display.set_mode((width, height))
-# s = Segment(300, 300, 100, screen)
+# paramenter 1 er hvor mange deler, par. 2 er lengden på tentakkelen
 t = Tentacle(150, 1000, screen)
 s = Segment(100, 100, 500, screen)
 
