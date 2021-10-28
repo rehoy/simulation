@@ -12,11 +12,11 @@ class Segment:
         self.len = len
         self.bx, self.by = 200, 200
         self.screen = screen
-        self.color = (0, 0, 0)
+        self.color = (255, 0, 0)
 
     def draw(self):
         pygame.draw.line(self.screen, self.color,
-                         (self.x, self.y), (self.bx, self.by), 200)
+                         (self.x, self.y), (self.bx, self.by))
 
     def calculateEnd(self):
 

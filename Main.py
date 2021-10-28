@@ -7,12 +7,14 @@ from pygame.locals import*
 import math
 from Segment import Segment
 from Tentacle import Tentacle
-width = 1000
-height = 500
+# info = pygame.display.Info()
+width = 1200
+height = 600
 Color_screen = (0, 0, 0)
 screen = pygame.display.set_mode((width, height))
 # s = Segment(300, 300, 100, screen)
-t = Tentacle(10, 500, screen)
+t = Tentacle(150, 1000, screen)
+s = Segment(100, 100, 500, screen)
 
 
 def main():
@@ -23,14 +25,10 @@ def main():
         mx, my = pygame.mouse.get_pos()
 
         t.follow(mx, my)
-        # t.update()
-        # t.draw()
+        s.follow(mx, my)
+        s.update()
+        s.draw()
         t.run()
-
-        # s.follow(mx, my)
-        # s.update()
-        # s.draw()
-        # print(str(s.x) + " " + str(s.y))
 
         pygame.display.flip()
         screen.fill(Color_screen)

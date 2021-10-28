@@ -20,4 +20,43 @@ print(v3.x)
 
 brett = Spillebrett(width, height, Color_screen)
 
+
 brett.main()
+# screen = pygame.display.set_mode((width, height))
+
+
+# s = Segment(300, 500, 100, screen)
+
+# t = Tentacle(10, 500, screen)
+
+
+# def main():
+
+#     screen.fill(Color_screen)
+
+#     while True:
+#         mx, my = pygame.mouse.get_pos()
+
+#         # t.follow(mx, my)
+#         # # t.update()
+#         # # t.draw()
+#         # t.run()
+#         s.follow(mx, my)
+#         s.update()
+#         s.draw()
+
+#         # s.follow(mx, my)
+#         # s.update()
+#         # s.draw()
+#         # print(str(s.x) + " " + str(s.y))
+
+#         pygame.display.flip()
+#         screen.fill(Color_screen)
+
+#         for events in pygame.event.get():
+#             if events.type == QUIT:
+
+#                 sys.exit(0)
+
+
+# main()

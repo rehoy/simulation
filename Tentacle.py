@@ -27,6 +27,9 @@ class Tentacle:
         for i in range(1, self.ant_segments):
             self.segments[i].follow(self.segments[i-1].x, self.segments[i-1].y)
 
+    def seek(self, tx, ty):
+        pass
+
     def update(self):
         for i in self.segments:
             i.update()
