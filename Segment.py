@@ -41,9 +41,6 @@ class Segment:
         self.bx, self.x = self.x, self.bx
         self.by, self.y = self.y, self.by
 
-        self.bx, self, x = self.x, self.bx
-        self.by, self.y = self.y, self.by
-
         # if tx > self.x:
 
         #     self.x = self.x + (tx - self.x) - (self.len * cos(self.vinkel))
