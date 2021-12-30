@@ -2,6 +2,7 @@ import sys
 import pygame
 from pygame.locals import*
 import math
+from Segment import Segment
 
 
 def main():
@@ -19,11 +20,20 @@ def main():
     y1 = 300
     y2 = 290
 
+    s = Segment(x1, y1, 100, screen)
+    print(s.vinkel)
+
     print(math.degrees(math.atan2(y2 - y1, x2 - x1)))
     while True:
+        mx, my = pygame.mouse.get_pos()
 
-        pygame.draw.line(screen, line_color, (x1, y1), (x2, y2))
-        pygame.draw.circle(screen, (255, 255, 255), (200, 200), 10, 0)
+        v2x, v2y = s.seek(mx, my)
+        # s.move()
+        # s.update()
+        s.draw()
+        # pygame.draw.line(screen, line_color, (x1, y1), (x2, y2))
+        pygame.draw.circle(screen, (255, 255, 255), (v2x, v2y), 10, 0)
+        pygame.draw.line(screen, (255, 0, 0), (x1, y1), (x1 + v2x, y1 + v2y))
 
         pygame.display.flip()
         screen.fill(color)
