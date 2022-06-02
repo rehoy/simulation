@@ -95,14 +95,5 @@ class Segment:
 
         return v2x, v2y
 
-        # if cosinus == 0:
-        #     move("forward")
-        # elif cosinus == 180:
-        #     move("back")
-        # elif cosinus > 0 and cosinus < 180:
-        #     move("left")
-        # else:
-        #     move("right")
-
     def move():
         pass
